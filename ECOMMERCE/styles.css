@@ -107,11 +107,17 @@ ul li img{
     color:white;  
     
 }
+.modal-header span:hover{
+    color:hsl(26, 100%, 55%);
+}
 .previous, .next{   
     border:none;
     border-radius:50%;
     padding:5px;
     
+}
+.previous:hover, .next:hover{
+    color:hsl(26, 100%, 55%);
 }
 .modal-body{
     display: flex;
@@ -193,4 +199,10 @@ ul li img{
     padding-right:10px;
     filter:brightness(0),invert(1);
     
+}
+#cart-product-image{
+    width:25px;
+    height: 25px;
+    border-radius:5px;
+    display:none;
 }

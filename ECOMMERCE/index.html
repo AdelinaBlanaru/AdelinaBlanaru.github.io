@@ -66,8 +66,8 @@
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
-                    <div class="modal-body">
-                     Your cart is empty
+                    <div class="modal-body" id="cart-modal">
+                     <img src="images/image-product-1-thumbnail.jpg" id="cart-product-image"> Your cart is empty
                     </div>
                   </div>
                 </div>
@@ -91,7 +91,7 @@
             
             <!-- Button trigger modal -->
             <button type="button" class="modal-button" data-toggle="modal" data-target="#exampleModalCenter">
-              <img class="col-12" src="images/image-product-1.jpg">
+              <img class="col-12" src="images/image-product-1.jpg" id="bigImage">
             </button>
 
             <!-- Modal -->
@@ -106,12 +106,12 @@
                   </div>
                   <div class="modal-body">
                     <button class="previous"><</button>
-                   <img src="images/image-product-1.jpg">
-                   <button class="next">></button>
+                    <img name="slide" src="images/image-product-1.jpg">
+                    <button class="next">></button>
                   </div>
                   <div class="modal-footer">
                     <div class="col-12 thumbnails">
-                      <img class="col-3" src="images/image-product-1-thumbnail.jpg">
+                      <img class="col-3 thumbnail-1" src="images/image-product-1-thumbnail.jpg" >
                       <img class="col-3" src="images/image-product-2-thumbnail.jpg">
                       <img class="col-3" src="images/image-product-3-thumbnail.jpg">
                       <img class="col-3" src="images/image-product-4-thumbnail.jpg">
@@ -122,10 +122,10 @@
             </div>
           </div>
           <div class="col-12 thumbnails">
-            <img class="col-3" src="images/image-product-1-thumbnail.jpg">
-            <img class="col-3" src="images/image-product-2-thumbnail.jpg">
-            <img class="col-3" src="images/image-product-3-thumbnail.jpg">
-            <img class="col-3" src="images/image-product-4-thumbnail.jpg">
+            <img class="col-3" src="images/image-product-1-thumbnail.jpg" id="thumbnail-1">
+            <img class="col-3" src="images/image-product-2-thumbnail.jpg" id="thumbnail-2">
+            <img class="col-3" src="images/image-product-3-thumbnail.jpg" id="thumbnail-3">
+            <img class="col-3" src="images/image-product-4-thumbnail.jpg" id="thumbnail-4">
           </div>
         </div>
         <div class="col-6 product-info">
@@ -140,11 +140,11 @@
           <button class="minus">
             <img src="images/icon-minus.svg">
           </button>
-          <button class="quantity">0</button>
-          <button class="plus">
+          <button class="quantity" id="quantity">0</button>
+          <button class="plus" id="plus" >
             <img src="images/icon-plus.svg">
           </button>
-          <button class="add-to-cart">
+          <button class="add-to-cart" >
             <img src="images/icon-cart.svg">Add to cart
           </button>
         </div>
