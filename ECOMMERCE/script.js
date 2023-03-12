@@ -21,7 +21,7 @@ addToCart.addEventListener("click", function(){
     let product=125* quantity.innerHTML;
     let cartProductImage=document.querySelector("#cart-product-image");
     
-    cartModal.innerHTML=  "Fall Limited Edition Sneakers $125.00 x " + quantity.innerHTML + "  $" + product.toFixed(2);
+    cartModal.innerHTML=  "Fall Limited Edition Sneakers" + "<br />" + "$125.00 x" + quantity.innerHTML +  "  $" + product.toFixed(2);
     if (cartModal.innerHTML=  "Fall Limited Edition Sneakers $125.00 x " + quantity.innerHTML + "  $" + product.toFixed(2)){
         cartProductImage.style.display="inline";
     }   
